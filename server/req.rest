@@ -1,0 +1,16 @@
+GET http://localhost:3001/events
+###
+//body of req
+POST http://localhost:3001/event/new
+Content-Type: application/json
+
+   {
+        "title": "EVENT 6",
+        "description": "desc test 1",
+        "address":"adress test 1",
+        "image":"test.png",
+        "date":"2023-01-15T10:23:46.973Z"
+    }
+
+###
+DELETE http://localhost:3001/event/delete/63c48dad0513429921f97fa5
